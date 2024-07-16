@@ -76,7 +76,7 @@ public class Refresh extends AppCompatActivity {
             key = bundle.getString("Key");
             oldImageURL = bundle.getString("Image");
         }
-        databaseReference = FirebaseDatabase.getInstance().getReference("Android Uploads").child(key);
+        databaseReference = FirebaseDatabase.getInstance().getReference("Android Upload").child(key);
 
         updateImage.setOnClickListener(new View.OnClickListener() {
             @Override
